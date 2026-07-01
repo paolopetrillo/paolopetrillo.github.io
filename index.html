@@ -1,225 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <title>Paolo Petrillo | Sound Architect</title>
 
-<meta name="description" content="Strategic Sound Architect specializing in Sound Governance, Identity and Sonic Systems for global brands.">
+<meta name="description" content="Paolo Petrillo is a Strategic Sound Architect specializing in Sound Governance, Identity Systems and Sonic Strategy for global brands.">
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
 
 <style>
 :root{
-    --violet:#1a1033;
-    --gold:#D4AF37;
-    --muted:rgba(26,16,51,0.72);
+  --violet:#1a1033;
+  --gold:#D4AF37;
+  --muted:rgba(26,16,51,.72);
 }
 
+*{box-sizing:border-box}
+
 html{
-    scroll-behavior:smooth;
+  scroll-behavior:smooth;
 }
 
 body{
-    margin:0;
-    font-family:'Montserrat',sans-serif;
-    color:var(--violet);
-    background:#fff;
+  margin:0;
+  font-family:'Montserrat',sans-serif;
+  color:var(--violet);
+  background:#fff;
+  line-height:1.65;
 }
 
 /* NAV */
 nav{
-    position:fixed;
-    top:0;
-    width:100%;
-    padding:16px 6%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:rgba(255,255,255,0.75);
-    backdrop-filter:blur(18px);
-    border-bottom:1px solid rgba(0,0,0,0.06);
-    z-index:9999;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:16px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(255,255,255,.82);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(0,0,0,.06);
+  z-index:9999;
 }
 
 .logo{
-    font-size:.78em;
-    letter-spacing:.3em;
-    font-weight:600;
+  font-size:.78em;
+  letter-spacing:.32em;
+  font-weight:600;
 }
 
 .menu{
-    display:flex;
-    gap:20px;
-    align-items:center;
+  display:flex;
+  align-items:center;
+  gap:18px;
 }
 
 .menu a{
-    font-size:.72em;
-    letter-spacing:.2em;
-    text-transform:uppercase;
-    text-decoration:none;
-    color:var(--violet);
-    transition:.2s;
+  text-decoration:none;
+  font-size:.72em;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--violet);
+  transition:.2s ease;
 }
 
 .menu a:hover{
-    color:var(--gold);
+  color:var(--gold);
+}
+
+.lang{
+  margin-left:10px;
+  font-size:.72em;
 }
 
 .lang a{
-    font-size:.72em;
-    text-decoration:none;
+  text-decoration:none;
 }
 
-.lang a:first-child{ color:var(--gold); }
-.lang a:last-child{ color:var(--violet); }
+.lang a:first-child{color:var(--gold)}
+.lang a:last-child{color:var(--violet)}
 
 /* HERO */
 .hero{
-    padding:170px 8% 110px;
-    max-width:1100px;
-    margin:auto;
+  padding:180px 8% 110px;
+  max-width:1100px;
+  margin:auto;
 }
 
 .hero h1{
-    font-size:3.8em;
-    letter-spacing:.28em;
-    margin:0;
+  font-size:3.8em;
+  letter-spacing:.3em;
+  margin:0;
 }
 
 .hero p{
-    margin-top:20px;
-    font-size:1.15em;
-    color:var(--muted);
-    max-width:720px;
-    font-weight:300;
+  margin-top:18px;
+  font-size:1.15em;
+  max-width:720px;
+  color:var(--muted);
+  font-weight:300;
 }
 
 .line{
-    width:120px;
-    height:2px;
-    background:var(--gold);
-    margin-top:40px;
+  width:120px;
+  height:2px;
+  background:var(--gold);
+  margin-top:40px;
 }
 
-/* SECTION SYSTEM */
+/* SECTIONS */
 section{
-    padding:90px 8%;
-    max-width:1050px;
-    margin:auto;
+  padding:90px 8%;
+  max-width:1050px;
+  margin:auto;
 }
 
 .kicker{
-    font-size:.72em;
-    letter-spacing:.35em;
-    color:var(--gold);
-    margin-bottom:22px;
+  font-size:.72em;
+  letter-spacing:.35em;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:22px;
 }
 
 h2{
-    font-size:1.6em;
-    font-weight:400;
-    margin-bottom:22px;
+  font-size:1.6em;
+  font-weight:400;
+  margin-bottom:20px;
 }
 
 p{
-    color:var(--muted);
-    font-size:1.05em;
-    line-height:1.75;
+  color:var(--muted);
+  font-size:1.05em;
+  line-height:1.75;
 }
 
-/* GRID */
+/* PRINCIPLES */
+.principles{
+  display:grid;
+  gap:18px;
+}
+
+.principle{
+  border-left:2px solid var(--gold);
+  padding:14px 18px;
+  font-weight:400;
+}
+
+/* FRAMEWORK */
 .grid-3{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
 }
 
 .card{
-    border-left:2px solid var(--gold);
-    padding:18px 20px;
+  padding:18px 20px;
+  border-left:2px solid var(--gold);
 }
 
-/* PHOTO SYSTEM (EDITORIAL) */
+/* PROOF */
 .photo{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:center;
-    margin:60px 0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+  margin:60px 0;
 }
 
 .photo img{
-    width:100%;
-    border-radius:2px;
-}
-
-.caption{
-    font-size:.85em;
-    color:var(--muted);
+  width:100%;
+  border-radius:2px;
 }
 
 /* MEDIA */
 .media a{
-    display:block;
-    padding:18px 0;
-    border-bottom:1px solid rgba(0,0,0,0.08);
-    text-decoration:none;
-    color:var(--violet);
-    transition:.2s;
+  display:block;
+  padding:16px 0;
+  border-bottom:1px solid rgba(0,0,0,.08);
+  text-decoration:none;
+  color:var(--violet);
+  transition:.2s;
 }
 
 .media a:hover{
-    transform:translateX(6px);
-    color:var(--gold);
+  transform:translateX(6px);
+  color:var(--gold);
 }
 
 /* CONTACT */
 .contact{
-    display:flex;
-    gap:28px;
-    margin-top:25px;
+  display:flex;
+  gap:26px;
+  margin-top:25px;
 }
 
 .icon{
-    width:22px;
-    height:22px;
-    filter:grayscale(1);
-    transition:.25s;
+  width:22px;
+  height:22px;
+  filter:grayscale(1);
+  transition:.25s;
 }
 
 .icon:hover{
-    filter:none;
-    transform:translateY(-3px);
+  filter:none;
+  transform:translateY(-3px);
 }
 
-/* FOOT */
+/* FOOTER */
 footer{
-    padding:70px 8%;
-    text-align:center;
-    font-size:.75em;
-    color:rgba(26,16,51,0.5);
+  padding:70px 8%;
+  text-align:center;
+  font-size:.75em;
+  color:rgba(26,16,51,.5);
 }
 
 /* RESPONSIVE */
 @media(max-width:768px){
-.hero h1{font-size:2.3em}
-.grid-3{grid-template-columns:1fr}
-.photo{grid-template-columns:1fr}
-.menu{display:none}
+  .hero h1{font-size:2.3em}
+  .grid-3{grid-template-columns:1fr}
+  .photo{grid-template-columns:1fr}
+  .menu{display:none}
 }
 </style>
 
-<!-- SEO + AI -->
+<!-- SEO / AI -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"Person",
   "name":"Paolo Petrillo",
   "jobTitle":"Sound Architect",
-  "description":"Strategic Sound Architect specializing in Sound Governance, Identity, Positioning and Sonic Systems.",
+  "description":"Strategic Sound Architect specializing in Sound Governance, Identity and Sonic Strategy.",
   "url":"https://paolopetrillo.github.io"
 }
 </script>
@@ -233,9 +249,10 @@ footer{
 <div class="logo">PAOLO PETRILLO</div>
 
 <div class="menu">
-<a href="#profile">Profile</a>
-<a href="#method">Method</a>
-<a href="#experience">Work</a>
+<a href="#positioning">Positioning</a>
+<a href="#principles">Principles</a>
+<a href="#framework">Framework</a>
+<a href="#proof">Proof</a>
 <a href="#media">Media</a>
 <a href="#contact">Contact</a>
 
@@ -250,87 +267,107 @@ footer{
 <header class="hero">
 <h1>SOUND ARCHITECT</h1>
 <p>
-Designing strategic sonic systems that transform perception into measurable brand equity and long-term memory structures.
+Strategic systems for Sound Governance, Identity and Sonic Positioning. From perception design to measurable brand equity.
 </p>
 <div class="line"></div>
 </header>
 
 <main>
 
-<!-- PROFILE -->
-<section id="profile">
-<div class="kicker">01 — PROFILE</div>
-<h2>Positioning</h2>
+<!-- POSITIONING -->
+<section id="positioning">
+<div class="kicker">01 — POSITIONING</div>
+<h2>Profile</h2>
+
 <p>
-Strategic Sound Architect focused on Sound Governance, Identity, and Sonic Strategy for high-level brand ecosystems.
+Paolo Petrillo is a Strategic Sound Architect working at the intersection of brand strategy, sonic systems and governance frameworks.
+</p>
+
+<p>
+Sound is not decoration. It is infrastructure that shapes perception before cognition.
 </p>
 </section>
 
-<!-- METHOD -->
-<section id="method">
-<div class="kicker">02 — METHOD</div>
-<h2>Sound Governance Framework</h2>
+<!-- PRINCIPLES -->
+<section id="principles">
+<div class="kicker">02 — PRINCIPLES</div>
+<h2>Manifesto</h2>
+
+<div class="principles">
+<div class="principle">Sound is infrastructure, not decoration.</div>
+<div class="principle">Identity must be governed, not styled.</div>
+<div class="principle">Memory is the real brand equity.</div>
+</div>
+</section>
+
+<!-- FRAMEWORK -->
+<section id="framework">
+<div class="kicker">03 — FRAMEWORK</div>
+<h2>Sound Governance System</h2>
 
 <div class="grid-3">
-<div class="card">Diagnosis<br><small>Strategic sonic audit</small></div>
+<div class="card">Diagnosis<br><small>Sonic audit & risk mapping</small></div>
 <div class="card">Infrastructure<br><small>Identity system design</small></div>
 <div class="card">Governance<br><small>Cross-channel control</small></div>
 </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-<div class="kicker">03 — WORK</div>
-<h2>Selected Appearances</h2>
+<!-- PROOF -->
+<section id="proof">
+<div class="kicker">04 — PROOF</div>
+<h2>Field Evidence</h2>
 
 <div class="photo">
-<img src="photo1.jpg">
-<div class="caption">Television Interview — Strategic Sound Narrative</div>
+<img src="photo1.jpg" alt="TV Interview">
+<div>Television Interview — Strategic Sound Governance applied in media context.</div>
 </div>
 
 <div class="photo">
-<div class="caption">Industry Event — Sound Strategy Lecture</div>
-<img src="photo2.jpg">
+<div>Industry Event — Sonic strategy lecture for executive audience.</div>
+<img src="photo2.jpg" alt="Event">
 </div>
 
 <div class="photo">
-<img src="photo3.jpg">
-<div class="caption">International Conference — Governance Framework</div>
+<img src="photo3.jpg" alt="Conference">
+<div>International Conference — Framework presentation and validation.</div>
 </div>
+
 </section>
 
 <!-- MEDIA -->
 <section id="media">
-<div class="kicker">04 — MEDIA</div>
-<h2>Insights & Recognition</h2>
+<div class="kicker">05 — MEDIA</div>
+<h2>Selected Publications</h2>
 
 <div class="media">
 <a href="https://youmark.it/il-suono-comunica-architetti-non-sound-designer/" target="_blank">Youmark — Architects, not Sound Designers</a>
-<a href="https://www.engage.it/agenzie/media-dressing-il-suono-come-leva-strategica-per-i-brand-petrillo-misurare-qualcosa-di-impercettibile-e-la-sfida-principale.aspx" target="_blank">Engage — Strategic Sound as Brand Lever</a>
-<a href="https://lagazzettadelpubblicitario.it/interviste/petrillo-suono-media-dressing/" target="_blank">Gazzetta — Impact of Sonic Design</a>
-<a href="https://www.oltrelamedia.tv/touchpoint/il-te-delle-cinque-limportanza-del-sound-design-per-i-brand-ospite-paolo-petrillo/" target="_blank">Touchpoint TV — Sound Design Importance</a>
+<a href="https://www.engage.it/agenzie/media-dressing-il-suono-come-leva-strategica-per-i-brand-petrillo-misurare-qualcosa-di-impercettibile-e-la-sfida-principale.aspx" target="_blank">Engage — Sound as Strategic Lever</a>
+<a href="https://lagazzettadelpubblicitario.it/interviste/petrillo-suono-media-dressing/" target="_blank">Gazzetta — Sonic Impact</a>
+<a href="https://www.oltrelamedia.tv/touchpoint/il-te-delle-cinque-limportanza-del-sound-design-per-i-brand-ospite-paolo-petrillo/" target="_blank">Touchpoint TV — Sound Strategy</a>
 </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-<div class="kicker">05 — CONTACT</div>
+<div class="kicker">06 — CONTACT</div>
 <h2>Initiate Collaboration</h2>
 
-<p>Every corporate vibration is an opportunity to generate long-term brand value.</p>
+<p>
+Every corporate system contains a sonic layer. The opportunity is to govern it strategically.
+</p>
 
 <div class="contact">
 
 <a href="#" onclick="window.location='mailto:'+'info'+'@'+'paolopetrillo.it'">
-<img class="icon" src="mail.svg">
+<img class="icon" src="mail.svg" alt="mail">
 </a>
 
 <a href="#" onclick="window.open('https://linkedin.com/in/paolopetrillo/')">
-<img class="icon" src="linkedin.svg">
+<img class="icon" src="linkedin.svg" alt="linkedin">
 </a>
 
 <a href="#" onclick="window.location='tel:+393932889190'">
-<img class="icon" src="phone.svg">
+<img class="icon" src="phone.svg" alt="phone">
 </a>
 
 </div>
