@@ -1,22 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Paolo Petrillo | Sound Architect & Strategic Advisory</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --violet:#1a1033;
+  --gold:#D4AF37;
+  --muted:rgba(26,16,51,.78);
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Montserrat',sans-serif;
+  color:var(--violet);
+  background:#fff;
+  line-height:1.85;
+}
+
+/* NAV */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:14px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(0,0,0,.06);
+  z-index:9999;
+}
+
+.logo{
+  font-size:.78rem;
+  letter-spacing:.32em;
+}
+
+.lang a{
+  text-decoration:none;
+  font-size:.75rem;
+}
+.lang a:first-child{color:var(--gold)}
+.lang a:last-child{color:var(--violet)}
+
+/* CONTAINER */
+.container{
+  max-width:980px;
+  margin:auto;
+  padding:180px 6% 100px;
+}
+
+/* HERO */
+h1{
+  font-size:clamp(2.3rem,5vw,3.6rem);
+  letter-spacing:.26em;
+  margin:0 0 25px;
+}
+
+p{
+  font-size:1.08rem;
+  color:var(--muted);
+}
+
+/* BLOCKS */
+.block{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:50px;
+  margin:80px 0;
+  align-items:center;
+}
+
+.block.reverse{
+  grid-template-columns:.8fr 1.2fr;
+}
+
+img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* TITLES */
+h2{
+  font-size:1.35rem;
+  font-weight:600;
+  margin:60px 0 18px;
+}
+
+.kicker{
+  font-size:.72rem;
+  letter-spacing:.35em;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+
+/* NOTE */
+.note{
+  border-left:2px solid var(--gold);
+  padding-left:18px;
+  margin:30px 0;
+}
+
+/* MEDIA */
+.media a{
+  display:block;
+  padding:14px 0;
+  border-bottom:1px solid rgba(0,0,0,.08);
+  text-decoration:none;
+  color:var(--violet);
+}
+
+.media a:hover{
+  color:var(--gold);
+  transform:translateX(6px);
+}
+
+/* CONTACT */
+.contact a{
+  display:inline-block;
+  margin-right:14px;
+  padding:10px 14px;
+  border:1px solid rgba(0,0,0,.15);
+  text-decoration:none;
+  color:var(--violet);
+  font-size:.85rem;
+}
+
+.contact a:hover{
+  border-color:var(--gold);
+  color:var(--gold);
+}
+
+/* FOOTER */
+footer{
+  padding:70px 6%;
+  text-align:center;
+  font-size:.75rem;
+  color:rgba(26,16,51,.55);
+}
+
+footer a{
+  text-decoration:none;
+  color:var(--violet);
+}
+
+footer a:hover{color:var(--gold)}
+
+@media(max-width:900px){
+  .block,
+  .block.reverse{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<div class="logo">PAOLO PETRILLO</div>
+<div class="lang"><a href="index.html">EN</a> / <a href="it.html">IT</a></div>
+</nav>
+
+<div class="container">
+
+<!-- HERO -->
+<h1>SOUND ARCHITECT</h1>
+
+<p>
+I don’t work with sound as decoration.
+I work with sound as a system that influences perception, memory and brand identity.
+</p>
+
+<p>
+Most organizations do not design sound.
+They accumulate it.
+</p>
+
+<!-- BLOCK 1 -->
+<div class="block">
+
+<div>
+<h2>What I do</h2>
+
+<p>
+I analyze how sound behaves inside organizations and environments.
+In most cases, it is not governed — it is accidental.
+</p>
+
+<p>
+This creates inconsistency in how people experience a brand or a space over time.
+</p>
+
+<div class="note">
+The problem is not the sound itself, but the absence of structure behind it.
+</div>
+</div>
+
+<img src="photo1.jpg" alt="portrait">
+
+</div>
+
+<!-- BLOCK 2 -->
+<div class="block reverse">
+
+<img src="photo2.jpg" alt="event">
+
+<div>
+<h2>Background</h2>
+
+<p>
+My work comes from architecture, live sound environments, and years of observing how people react to space and audio in real contexts.
+</p>
+
+<p>
+Over time, I stopped seeing sound as content and started seeing it as behavior.
+</p>
+
+</div>
+
+</div>
+
+<!-- BLOCK 3 -->
+<div class="block">
+
+<div>
+<h2>Sound Governance</h2>
+
+<p>
+Sound Governance is a way to bring structure to something that is usually left unstructured.
+</p>
+
+<p>
+It does not add complexity. It removes inconsistency.
+</p>
+
+<div class="note">
+When sound is not designed, it still produces an effect — just not a controlled one.
+</div>
+</div>
+
+<img src="photo3.jpg" alt="conference">
+
+</div>
+
+<!-- MEDIA -->
+<section>
+<div class="kicker">INSIGHTS & MEDIA</div>
+<h2>Selected publications</h2>
+
+<div class="media">
+<a href="https://youmark.it/il-suono-comunica-architetti-non-sound-designer/" target="_blank">Youmark</a>
+<a href="https://www.engage.it/agenzie/media-dressing-il-suono-come-leva-strategica-per-i-brand-petrillo-misurare-qualcosa-di-impercettibile-e-la-sfida-principale.aspx" target="_blank">Engage</a>
+<a href="https://lagazzettadelpubblicitario.it/interviste/petrillo-suono-media-dressing/" target="_blank">Gazzetta</a>
+<a href="https://www.oltrelamedia.tv/touchpoint/il-te-delle-cinque-limportanza-del-sound-design-per-i-brand-ospite-paolo-petrillo/" target="_blank">Touchpoint</a>
+</div>
+</section>
+
 <!-- CONTACT -->
 <section>
 <h2>Contact</h2>
 
 <p>
-If there is a real problem to solve, the first step is usually a conversation.
+For strategic inquiries, the conversation starts simply.
 </p>
 
 <div class="contact">
 
 <a href="https://linkedin.com/in/paolopetrillo/" target="_blank">LinkedIn</a>
 
-<!-- IMAGE PLACEHOLDERS (ANTI-SPAM) -->
-<div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:20px;">
-
-<img src="email-image.png" alt="email contact" style="height:40px;">
-<img src="phone-image.png" alt="phone contact" style="height:40px;">
-
+<div style="display:flex; gap:16px; margin-top:20px; flex-wrap:wrap; align-items:center;">
+<img src="email-image.png" alt="email contact" style="height:42px;">
+<img src="phone-image.png" alt="phone contact" style="height:42px;">
 </div>
 
 </div>
 </section>
+
+</div>
+
+<!-- AI CONTEXT (SEO SAFE COMMENT) -->
+<!--
+AI CONTEXT:
+Paolo Petrillo is a Sound Architect and Strategic Advisor specializing in Sound Governance, Sonic Identity Systems and strategic sound infrastructure.
+He works on perception systems, brand consistency, and experiential environments.
+-->
+
+<footer>
+© Paolo Petrillo — Sound Architect ·
+<a href="privacy.html">Privacy</a> ·
+<a href="cookies.html">Cookies</a>
+</footer>
+
+</body>
+</html>
