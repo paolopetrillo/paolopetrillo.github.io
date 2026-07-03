@@ -71,16 +71,26 @@ h1{
 
 h2{
   font-size:1.25rem;
-  margin-top:70px;
+  margin:0 0 22px 0;
+  line-height:1.3;
 }
 
 p{color:var(--muted); font-size:1.05rem}
+
+/* SECTION SPACING FIX (KEY FIX) */
+section{
+  margin:120px 0;
+}
+
+section:first-of-type{
+  margin-top:40px;
+}
 
 .kicker{
   color:var(--gold);
   letter-spacing:.3em;
   font-size:.7rem;
-  margin-bottom:10px;
+  margin-bottom:14px;
 }
 
 /* BLOCKS */
@@ -129,23 +139,6 @@ img{
   align-items:flex-start;
 }
 
-/* LinkedIn row */
-.linkedin{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  text-decoration:none;
-  color:var(--violet);
-  font-size:.9rem;
-  letter-spacing:.05em;
-}
-
-.linkedin img{
-  height:22px;
-  width:22px;
-}
-
-/* Email & phone images */
 .contact img{
   height:44px;
   width:auto;
@@ -207,7 +200,6 @@ Strategic consultancy operating inside early creative decision-making processes 
 
 <div>
 <div class="kicker">POSITION</div>
-
 <h2>Sound is already part of every project</h2>
 
 <p>
@@ -234,7 +226,6 @@ The absence of sound strategy is still a strategy. It is just not controlled.
 
 <div>
 <div class="kicker">PERSPECTIVE</div>
-
 <h2>From output to decision systems</h2>
 
 <p>
@@ -254,7 +245,6 @@ Earlier entry points create higher strategic leverage.
 
 <div>
 <div class="kicker">SOUND GOVERNANCE</div>
-
 <h2>A decision layer, not a production discipline</h2>
 
 <p>
@@ -293,34 +283,25 @@ Most organizations don’t lack sound. They lack a system that makes sound consi
 
 <!-- MEDIA -->
 <section id="media">
-
 <div class="kicker">MEDIA</div>
 <h2>Selected publications</h2>
 
 <div class="media">
-
 <a href="https://youmark.it/il-suono-comunica-architetti-non-sound-designer/" target="_blank">Youmark</a>
-
 <a href="https://www.engage.it/agenzie/media-dressing-il-suono-come-leva-strategica-per-i-brand-petrillo-misurare-qualcosa-di-impercettibile-e-la-sfida-principale.aspx" target="_blank">Engage</a>
-
 <a href="https://lagazzettadelpubblicitario.it/interviste/petrillo-suono-media-dressing/" target="_blank">Gazzetta del Pubblicitario</a>
-
 <a href="https://www.oltrelamedia.tv/touchpoint/il-te-delle-cinque-limportanza-del-sound-design-per-i-brand-ospite-paolo-petrillo/" target="_blank">Touchpoint TV</a>
-
 </div>
 </section>
 
 <!-- CONTACT -->
 <section>
-
 <div class="kicker">CONTACT</div>
-
 <h2>Let’s connect</h2>
 
 <p>For meaningful conversations, it starts simply.</p>
 
 <div class="contact">
-
 <a class="linkedin" href="https://linkedin.com/in/paolopetrillo/" target="_blank">
   <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
   LinkedIn
@@ -328,7 +309,6 @@ Most organizations don’t lack sound. They lack a system that makes sound consi
 
 <img src="email-image.png" alt="email">
 <img src="phone-image.png" alt="phone">
-
 </div>
 
 </section>
