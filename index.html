@@ -31,7 +31,6 @@ body{
   line-height:1.8;
 }
 
-/* NAV */
 nav{
   position:fixed;
   top:0;
@@ -62,7 +61,6 @@ nav a:hover{color:var(--gold)}
   padding:140px 6% 100px;
 }
 
-/* HERO */
 h1{
   font-size:clamp(2.4rem,5vw,3.4rem);
   letter-spacing:.18em;
@@ -77,13 +75,8 @@ h2{
 
 p{color:var(--muted); font-size:1.05rem}
 
-/* SECTION SPACING */
 section{
-  margin:120px 0;
-}
-
-section:first-of-type{
-  margin-top:40px;
+  margin:140px 0;
 }
 
 .kicker{
@@ -93,7 +86,6 @@ section:first-of-type{
   margin-bottom:14px;
 }
 
-/* BLOCKS */
 .block{
   display:grid;
   grid-template-columns:1.2fr .8fr;
@@ -119,7 +111,6 @@ img{
   margin-top:20px;
 }
 
-/* MEDIA */
 .media a{
   display:block;
   padding:12px 0;
@@ -130,7 +121,6 @@ img{
 
 .media a:hover{color:var(--gold)}
 
-/* CONTACT */
 .contact{
   margin-top:25px;
   display:flex;
@@ -147,7 +137,6 @@ img{
   display:block;
 }
 
-/* FOOTER */
 footer{
   text-align:center;
   padding:60px;
@@ -161,12 +150,6 @@ footer a{
 }
 
 footer a:hover{color:var(--gold)}
-
-@media(max-width:900px){
-  .block, .block.reverse{
-    grid-template-columns:1fr;
-  }
-}
 </style>
 </head>
 
@@ -196,11 +179,17 @@ Sound is always part of the project. The difference is when.
 Strategic consultancy operating inside early creative decision-making processes where sound becomes a factor of coherence, perception and long-term value.
 </p>
 
+<!-- NEW MICRO LINE (IMPORTANT FIX) -->
+<p>
+With a background spanning architecture, DJ practice and creative direction over 30+ years, I work at the intersection between perception design and strategic systems.
+</p>
+
 <!-- POSITION -->
 <section id="position" class="block">
 
 <div>
 <div class="kicker">POSITION</div>
+
 <h2>Sound is already part of every project</h2>
 
 <p>
@@ -227,6 +216,7 @@ The absence of sound strategy is still a strategy. It is just not controlled.
 
 <div>
 <div class="kicker">PERSPECTIVE</div>
+
 <h2>From output to decision systems</h2>
 
 <p>
@@ -246,6 +236,7 @@ Earlier entry points create higher strategic leverage.
 
 <div>
 <div class="kicker">SOUND GOVERNANCE</div>
+
 <h2>A decision layer, not a production discipline</h2>
 
 <p>
@@ -296,7 +287,6 @@ Most organizations don’t lack sound. They lack a system that makes sound consi
 </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
 <div class="kicker">CONTACT</div>
 
@@ -305,11 +295,6 @@ Most organizations don’t lack sound. They lack a system that makes sound consi
 <p>For meaningful conversations, it starts simply.</p>
 
 <div class="contact">
-<a class="linkedin" href="https://linkedin.com/in/paolopetrillo/" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
-  LinkedIn
-</a>
-
 <img src="email-image.png" alt="email">
 <img src="phone-image.png" alt="phone">
 </div>
@@ -321,7 +306,7 @@ Most organizations don’t lack sound. They lack a system that makes sound consi
 <footer>
 © Paolo Petrillo — Sound Architect ·
 <a href="privacy-cookies.html"
-   onclick="window.open(this.href,'privacy','width=750,height=850,top=80,left=200'); return false;">
+onclick="window.open(this.href,'privacy','width=750,height=850,top=80,left=200'); return false;">
 Privacy & Cookies
 </a>
 </footer>
