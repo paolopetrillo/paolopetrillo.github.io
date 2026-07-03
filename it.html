@@ -31,6 +31,7 @@ body{
   line-height:1.8;
 }
 
+/* NAV */
 nav{
   position:fixed;
   top:0;
@@ -61,6 +62,7 @@ nav a:hover{color:var(--gold)}
   padding:140px 6% 100px;
 }
 
+/* TYPO */
 h1{
   font-size:clamp(2.4rem,5vw,3.4rem);
   letter-spacing:.18em;
@@ -75,12 +77,9 @@ h2{
 
 p{color:var(--muted); font-size:1.05rem}
 
+/* SECTIONS */
 section{
-  margin:120px 0;
-}
-
-section:first-of-type{
-  margin-top:40px;
+  margin:140px 0;
 }
 
 .kicker{
@@ -90,6 +89,7 @@ section:first-of-type{
   margin-bottom:14px;
 }
 
+/* BLOCKS */
 .block{
   display:grid;
   grid-template-columns:1.2fr .8fr;
@@ -115,6 +115,7 @@ img{
   margin-top:20px;
 }
 
+/* MEDIA */
 .media a{
   display:block;
   padding:12px 0;
@@ -125,6 +126,7 @@ img{
 
 .media a:hover{color:var(--gold)}
 
+/* CONTACT */
 .contact{
   margin-top:25px;
   display:flex;
@@ -141,6 +143,21 @@ img{
   display:block;
 }
 
+/* LINKEDIN */
+.linkedin{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:var(--violet);
+}
+
+.linkedin img{
+  height:18px;
+  width:18px;
+}
+
+/* FOOTER */
 footer{
   text-align:center;
   padding:60px;
@@ -168,9 +185,9 @@ footer a:hover{color:var(--gold)}
 <nav>
 <div><strong>PAOLO PETRILLO</strong></div>
 <div>
-<a href="#position">CONTESTO</a>
+<a href="#contesto">CONTESTO</a>
 <a href="#governance">GOVERNANCE</a>
-<a href="#process">PROCESSO</a>
+<a href="#processo">PROCESSO</a>
 <a href="#media">MEDIA</a>
 <a href="#contact">CONTATTI</a>
 <a href="index.html">EN</a>
@@ -189,11 +206,12 @@ Il suono è sempre parte del progetto. La differenza è quando viene preso in co
 Una consulenza strategica che interviene nelle fasi iniziali dei processi creativi, dove il suono non è un output estetico, ma una variabile che incide su coerenza, percezione e valore nel tempo.
 </p>
 
-<!-- POSITION -->
-<section id="position" class="block">
+<!-- CONTESTO -->
+<section id="contesto" class="block">
 
 <div>
 <div class="kicker">CONTESTO</div>
+
 <h2>Il suono esiste già in ogni progetto</h2>
 
 <p>
@@ -220,6 +238,7 @@ L’assenza di una strategia sonora è comunque una scelta. Solo, non è governa
 
 <div>
 <div class="kicker">PROSPETTIVA</div>
+
 <h2>Dal risultato ai sistemi decisionali</h2>
 
 <p>
@@ -239,6 +258,7 @@ Più questo ingresso è precoce, maggiore è la sua capacità di influenzare coe
 
 <div>
 <div class="kicker">SOUND GOVERNANCE</div>
+
 <h2>Un livello di decisione, non di produzione</h2>
 
 <p>
@@ -264,7 +284,7 @@ Molte organizzazioni non hanno un problema di suono, ma di sistema: manca una re
 </section>
 
 <!-- PROCESS -->
-<section id="process">
+<section id="processo">
 <div class="kicker">PROCESSO</div>
 
 <h2>Come si struttura il lavoro</h2>
@@ -296,7 +316,7 @@ Molte organizzazioni non hanno un problema di suono, ma di sistema: manca una re
 <h2>Contatto</h2>
 
 <p>
-Per conversazioni di progetto o esplorazioni strategiche, il punto di partenza è sempre semplice.
+Per conversazioni di progetto o esplorazioni strategiche.
 </p>
 
 <div class="contact">
@@ -317,8 +337,7 @@ Per conversazioni di progetto o esplorazioni strategiche, il punto di partenza �
 
 <footer>
 © Paolo Petrillo — Sound Architect ·
-<a href="privacy.html">Privacy</a> ·
-<a href="cookies.html">Cookies</a>
+<a href="privacy-cookies.html">Privacy & Cookies</a>
 </footer>
 
 </body>
