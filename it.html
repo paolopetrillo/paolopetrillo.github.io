@@ -6,8 +6,8 @@
 
 <title>Paolo Petrillo | Sound Architect & Strategic Consultant</title>
 
-<meta name="description" content="Consulenza in Sound Governance integrata nei processi decisionali creativi e strategici.">
-<meta name="keywords" content="sound governance, sound architect, audit sonoro, brand experience, sound strategy">
+<meta name="description" content="Consulenza in Sound Governance per brand, agenzie e team creativi. Sonic Audit, Identity Definition e Governance applicati ai processi decisionali.">
+<meta name="keywords" content="sound governance, audit sonoro, sound strategy, sound architect, brand experience">
 <meta name="robots" content="index, follow">
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@ body{
   font-family:'Montserrat',sans-serif;
   color:var(--violet);
   background:#fff;
-  line-height:1.85;
+  line-height:1.8;
 }
 
 nav{
@@ -62,29 +62,29 @@ nav a:hover{color:var(--gold)}
 h1{
   font-size:clamp(2.4rem,5vw,3.4rem);
   letter-spacing:.18em;
-  margin-bottom:18px;
+  margin-bottom:20px;
 }
 
 h2{
   font-size:1.25rem;
-  margin:0 0 18px 0;
+  margin:0 0 22px 0;
 }
 
 p{color:var(--muted); font-size:1.05rem}
 
-section{margin:130px 0}
+section{margin:120px 0}
 
 .kicker{
   color:var(--gold);
-  letter-spacing:.32em;
+  letter-spacing:.3em;
   font-size:.7rem;
-  margin-bottom:12px;
+  margin-bottom:14px;
 }
 
 .block{
   display:grid;
   grid-template-columns:1.2fr .8fr;
-  gap:50px;
+  gap:40px;
   align-items:center;
   margin:80px 0;
 }
@@ -93,15 +93,14 @@ section{margin:130px 0}
   grid-template-columns:.8fr 1.2fr;
 }
 
-img{width:100%;height:auto}
-
-.note{
-  border-left:2px solid var(--gold);
-  padding-left:16px;
-  margin-top:18px;
-  color:var(--muted);
+img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:2px;
 }
 
+/* MEDIA */
 .media a{
   display:block;
   padding:12px 0;
@@ -112,23 +111,28 @@ img{width:100%;height:auto}
 
 .media a:hover{color:var(--gold)}
 
+/* CONTACT */
 .contact{
   display:flex;
   flex-direction:column;
-  gap:16px;
+  gap:12px;
+  align-items:flex-start;
   margin-top:20px;
 }
 
 .contact img{
-  height:44px;
+  height:26px;
   width:auto;
+  object-fit:contain;
+  display:block;
 }
 
+/* FOOTER */
 footer{
   text-align:center;
   padding:60px;
   font-size:.75rem;
-  color:rgba(26,16,51,.55);
+  color:rgba(26,16,51,.5);
 }
 
 footer a{
@@ -139,7 +143,9 @@ footer a{
 footer a:hover{color:var(--gold)}
 
 @media(max-width:900px){
-  .block,.block.reverse{grid-template-columns:1fr}
+  .block, .block.reverse{
+    grid-template-columns:1fr;
+  }
 }
 </style>
 </head>
@@ -150,9 +156,10 @@ footer a:hover{color:var(--gold)}
 <div><strong>PAOLO PETRILLO</strong></div>
 <div>
 <a href="#contesto">CONTESTO</a>
-<a href="#prospettiva">PROSPETTIVA</a>
 <a href="#governance">GOVERNANCE</a>
 <a href="#processo">PROCESSO</a>
+<a href="#media">MEDIA</a>
+<a href="#contatto">CONTATTI</a>
 <a href="index.html">EN</a>
 </div>
 </nav>
@@ -163,45 +170,41 @@ footer a:hover{color:var(--gold)}
 
 <p>Il suono è sempre parte del progetto. La differenza è quando viene considerato.</p>
 
-<p>Consulenza strategica che interviene nelle fasi iniziali dei processi creativi dove il suono diventa variabile strutturale.</p>
-
 <section id="contesto" class="block">
 <div>
 <div class="kicker">CONTESTO</div>
-<h2>Il suono esiste già in ogni progetto</h2>
-<p>Nasce da decisioni creative e spaziali anche quando non è progettato.</p>
-<p>Diventa una struttura implicita che influenza la percezione.</p>
-<div class="note">L’assenza di strategia sonora è comunque una scelta.</div>
+<h2>Il suono è già presente in ogni progetto</h2>
+<p>Anche quando non progettato, nasce dalle decisioni creative e spaziali.</p>
+<p>Genera una struttura implicita che influenza la percezione.</p>
 </div>
-<img src="photo1.jpg">
+<img src="photo1.jpg" alt="">
 </section>
 
-<section id="prospettiva" class="block reverse">
-<img src="photo2.png">
+<section class="block reverse">
+<img src="photo2.jpg" alt="">
 <div>
 <div class="kicker">PROSPETTIVA</div>
 <h2>Dal risultato ai sistemi decisionali</h2>
-<p>Il valore del suono emerge quando entra nel processo decisionale.</p>
-<p>Più è precoce, maggiore è il suo impatto.</p>
+<p>Il valore emerge quando il suono entra nel processo decisionale.</p>
+<p>Più è precoce, maggiore è l’impatto strategico.</p>
 </div>
 </section>
 
 <section id="governance" class="block">
 <div>
 <div class="kicker">SOUND GOVERNANCE</div>
-<h2>Un sistema prima dell’esecuzione</h2>
-<p>Definisce il comportamento del suono prima che venga prodotto.</p>
-<p>Connette intenzione e coerenza nel tempo.</p>
-<div class="note">Il suono non governato agisce comunque.</div>
+<h2>Un livello decisionale, non produttivo</h2>
+<p>Definisce il comportamento del suono prima dell’esecuzione.</p>
+<p>Connette intenzione, percezione e continuità nel tempo.</p>
 </div>
-<img src="photo3.jpg">
+<img src="photo3.jpg" alt="">
 </section>
 
 <section id="processo">
 <div class="kicker">PROCESSO</div>
-<h2>Tre livelli operativi</h2>
-<p>Sonic Audit — lettura del sistema esistente.</p>
-<p>Identity Definition — direzione coerente.</p>
+<h2>Come si struttura il lavoro</h2>
+<p>Sonic Audit — analisi del sistema sonoro esistente.</p>
+<p>Identity Definition — direzione sonora coerente.</p>
 <p>Governance — continuità nel tempo.</p>
 </section>
 
@@ -212,27 +215,28 @@ footer a:hover{color:var(--gold)}
 <div class="media">
 <a href="https://youmark.it/il-suono-comunica-architetti-non-sound-designer/" target="_blank">Youmark</a>
 <a href="https://www.engage.it/agenzie/media-dressing-il-suono-come-leva-strategica-per-i-brand-petrillo-misurare-qualcosa-di-impercettibile-e-la-sfida-principale.aspx" target="_blank">Engage</a>
-<a href="https://lagazzettadelpubblicitario.it/interviste/petrillo-suono-media-dressing/" target="_blank">La Gazzetta del Pubblicitario</a>
+<a href="https://lagazzettadelpubblicitario.it/interviste/petrillo-suono-media-dressing/" target="_blank">Gazzetta del Pubblicitario</a>
 <a href="https://www.oltrelamedia.tv/touchpoint/il-te-delle-cinque-limportanza-del-sound-design-per-i-brand-ospite-paolo-petrillo/" target="_blank">Touchpoint TV</a>
 </div>
 </section>
 
-<section id="contatti">
+<section id="contatto">
 <div class="kicker">CONTATTI</div>
 <h2>Contatto</h2>
 
 <div class="contact">
-<img src="email-image.png">
-<img src="phone-image.png">
+<a href="https://linkedin.com/in/paolopetrillo/" target="_blank">LinkedIn</a>
+
+<img src="email-image.png" alt="email">
+<img src="phone-image.png" alt="phone">
 </div>
 </section>
 
 </div>
 
 <footer>
-© Paolo Petrillo — Sound Architect ·
-<a href="privacy-cookies.html"
-onclick="window.open(this.href,'privacy','width=750,height=850'); return false;">
+© Paolo Petrillo —
+<a href="privacy-cookies.html" onclick="window.open(this.href,'privacy','width=750,height=850'); return false;">
 Privacy & Cookies
 </a>
 </footer>
