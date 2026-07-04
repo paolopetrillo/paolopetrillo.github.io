@@ -120,8 +120,27 @@ img{
   margin-top:20px;
 }
 
-.contact img{
-  height:26px;   /* FIX: small, non-stretched */
+/* Nuova classe per il link LinkedIn con icona */
+.linkedin-link {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--violet);
+  font-weight: 500;
+}
+
+.linkedin-link:hover {color: var(--gold);}
+
+.linkedin-link img {
+  height: 18px;
+  width: 18px;
+  object-fit: contain;
+  display: block;
+}
+
+.contact img[alt="email"], .contact img[alt="phone"] {
+  height:26px;
   width:auto;
   object-fit:contain;
   display:block;
@@ -225,7 +244,10 @@ footer a:hover{color:var(--gold)}
 <h2>Contact</h2>
 
 <div class="contact">
-<a href="https://linkedin.com/in/paolopetrillo/" target="_blank">LinkedIn</a>
+<a href="https://linkedin.com/in/paolopetrillo/" target="_blank" class="linkedin-link">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/linkedin.svg" alt="LinkedIn icon">
+    LinkedIn
+</a>
 
 <img src="email-image.png" alt="email">
 <img src="phone-image.png" alt="phone">
