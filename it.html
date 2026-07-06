@@ -120,30 +120,25 @@ img{
   margin-top:20px;
 }
 
-/* LinkedIn Icon Styling */
-.linkedin-link {
-  display: flex !important;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: var(--violet);
-  font-weight: 500;
+.linkedin-link{
+  display:flex !important;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:var(--violet);
 }
 
-.linkedin-link:hover {color: var(--gold);}
-
-.linkedin-link img {
-  height: 18px;
-  width: 18px;
-  object-fit: contain;
-  display: block;
+.linkedin-link img{
+  height:18px;
+  width:18px;
 }
 
-.contact img[alt="email"], .contact img[alt="phone"] {
+/* email + phone smaller */
+.contact img[alt="email"],
+.contact img[alt="phone"]{
   height:26px;
   width:auto;
   object-fit:contain;
-  display:block;
 }
 
 /* FOOTER */
@@ -162,9 +157,7 @@ footer a{
 footer a:hover{color:var(--gold)}
 
 @media(max-width:900px){
-  .block, .block.reverse{
-    grid-template-columns:1fr;
-  }
+  .block,.block.reverse{grid-template-columns:1fr;}
 }
 </style>
 </head>
@@ -241,18 +234,21 @@ footer a:hover{color:var(--gold)}
 
 <section id="contatto">
 <div class="kicker">CONTATTI</div>
+
 <h2>Iniziamo da una conversazione</h2>
-  <p>Che si tratti di un progetto in fase di sviluppo, di un'esperienza da migliorare o semplicemente dell'esplorazione del ruolo che il suono potrebbe avere, ogni collaborazione inizia dalla comprensione del contesto, prima ancora di parlare di soluzioni.</p>
+
+<p>Ogni collaborazione parte dalla comprensione del contesto prima delle soluzioni. Qui valutiamo insieme se e come la Sound Governance può generare valore nel tuo sistema.</p>
 
 <div class="contact">
 <a href="https://linkedin.com/in/paolopetrillo/" target="_blank" class="linkedin-link">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/linkedin.svg" alt="LinkedIn icon">
-    LinkedIn
+<img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/linkedin.svg" alt="">
+LinkedIn
 </a>
 
 <img src="email-image.png" alt="email">
 <img src="phone-image.png" alt="phone">
 </div>
+
 </section>
 
 </div>
