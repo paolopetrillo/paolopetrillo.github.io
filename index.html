@@ -120,30 +120,24 @@ img{
   margin-top:20px;
 }
 
-/* Nuova classe per il link LinkedIn con icona */
 .linkedin-link {
-  display: flex !important;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: var(--violet);
-  font-weight: 500;
+  display:flex !important;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:var(--violet);
 }
 
-.linkedin-link:hover {color: var(--gold);}
-
-.linkedin-link img {
-  height: 18px;
-  width: 18px;
-  object-fit: contain;
-  display: block;
+.linkedin-link img{
+  height:18px;
+  width:18px;
 }
 
-.contact img[alt="email"], .contact img[alt="phone"] {
+.contact img[alt="email"],
+.contact img[alt="phone"]{
   height:26px;
   width:auto;
   object-fit:contain;
-  display:block;
 }
 
 /* FOOTER */
@@ -162,9 +156,7 @@ footer a{
 footer a:hover{color:var(--gold)}
 
 @media(max-width:900px){
-  .block, .block.reverse{
-    grid-template-columns:1fr;
-  }
+  .block,.block.reverse{grid-template-columns:1fr;}
 }
 </style>
 </head>
@@ -241,18 +233,21 @@ footer a:hover{color:var(--gold)}
 
 <section id="contact">
 <div class="kicker">CONTACT</div>
+
 <h2>Let's start with a conversation</h2>
-  <p>Whether you're developing a new project, refining an existing experience, or simply exploring the role sound could play, every collaboration begins by understanding the context before discussing solutions.</p>
+
+<p>Every collaboration begins with understanding context before solutions. This is where we explore whether and how Sound Governance can create value in your system.</p>
 
 <div class="contact">
 <a href="https://linkedin.com/in/paolopetrillo/" target="_blank" class="linkedin-link">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/linkedin.svg" alt="LinkedIn icon">
-    LinkedIn profile
+<img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/linkedin.svg" alt="">
+LinkedIn profile
 </a>
 
 <img src="email-image.png" alt="email">
 <img src="phone-image.png" alt="phone">
 </div>
+
 </section>
 
 </div>
