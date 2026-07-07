@@ -9,7 +9,36 @@
 {"@context":"https://schema.org","@type":"Person","name":"Paolo Petrillo","jobTitle":"Sound Architect and Strategic Consultant","url":"https://www.paolopetrillo.com","sameAs":["https://linkedin.com/in/paolopetrillo/"],"knowsAbout":["Sound Governance","Sound Strategy","Sonic Audit","Brand Experience","Experience Design","Architecture","Retail","Hospitality","Live Experiences","Strategic Consulting"]}
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-<style>:root{--violet:#1a1033;--gold:#D4AF37;--muted:rgba(26,16,51,.75);}*{box-sizing:border-box}body{margin:0;font-family:'Montserrat',sans-serif;color:var(--violet);background:#fff;line-height:1.8;}nav{position:fixed;top:0;width:100%;padding:14px 6%;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.06);z-index:9999;}nav a{margin-left:18px;text-decoration:none;font-size:.75rem;letter-spacing:.1em;color:var(--violet);}nav a:hover{color:var(--gold)}.container{max-width:980px;margin:auto;padding:140px 6% 100px;}h1{font-size:clamp(2.4rem,5vw,3.4rem);letter-spacing:.18em;margin-bottom:20px;}h2{font-size:1.25rem;margin:0 0 22px 0;}p{color:var(--muted);font-size:1.05rem}section{margin:120px 0;scroll-margin-top:100px;}.kicker{color:var(--gold);letter-spacing:.3em;font-size:.7rem;margin-bottom:14px;}.block{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;margin:80px 0;}.block.reverse{grid-template-columns:.8fr 1.2fr;}img{width:100%;height:auto;display:block;border-radius:2px;}.media a{display:block;padding:12px 0;text-decoration:none;border-bottom:1px solid rgba(0,0,0,.08);color:var(--violet);}.media a:hover{color:var(--gold)}.contact{display:flex;flex-direction:column;gap:12px;align-items:flex-start;margin-top:20px;}.linkedin-link{display:flex!important;align-items:center;gap:10px;text-decoration:none;color:var(--violet);}.linkedin-link img{height:18px;width:18px;}.contact img[alt="email"],.contact img[alt="phone"]{height:26px;width:auto;object-fit:contain;}footer{text-align:center;padding:60px;font-size:.75rem;color:rgba(26,16,51,.5);}footer a{text-decoration:none;color:var(--violet);}footer a:hover{color:var(--gold)}@media(max-width:900px){.block,.block.reverse{grid-template-columns:1fr;}}</style></head>
+<style>
+:root{--violet:#1a1033;--gold:#D4AF37;--muted:rgba(26,16,51,.75);}*{box-sizing:border-box}body{margin:0;font-family:'Montserrat',sans-serif;color:var(--violet);background:#fff;line-height:1.8;}nav{position:fixed;top:0;width:100%;padding:14px 6%;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.06);z-index:9999;}nav a{margin-left:18px;text-decoration:none;font-size:.75rem;letter-spacing:.1em;color:var(--violet);}nav a:hover{color:var(--gold)}.container{max-width:980px;margin:auto;padding:140px 6% 100px;}h1{font-size:clamp(2.4rem,5vw,3.4rem);letter-spacing:.18em;margin-bottom:20px;}h2{font-size:1.25rem;margin:0 0 22px 0;}p{color:var(--muted);font-size:1.05rem}section{margin:120px 0;scroll-margin-top:100px;}.kicker{color:var(--gold);letter-spacing:.3em;font-size:.7rem;margin-bottom:14px;}.block{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;margin:80px 0;}.block.reverse{grid-template-columns:.8fr 1.2fr;}img{width:100%;height:auto;display:block;border-radius:2px;}.media a{display:block;padding:12px 0;text-decoration:none;border-bottom:1px solid rgba(0,0,0,.08);color:var(--violet);}.media a:hover{color:var(--gold)}.contact{display:flex;flex-direction:column;gap:12px;align-items:flex-start;margin-top:20px;}.linkedin-link{display:flex!important;align-items:center;gap:10px;text-decoration:none;color:var(--violet);}.linkedin-link img{height:18px;width:18px;}.contact img[alt="email"],.contact img[alt="phone"]{height:26px;width:auto;object-fit:contain;}footer{text-align:center;padding:60px;font-size:.75rem;color:rgba(26,16,51,.5);}footer a{text-decoration:none;color:var(--violet);}footer a:hover{color:var(--gold)}@media(max-width:900px){.block,.block.reverse{grid-template-columns:1fr;}}
+
+/* Ottimizzazione specifica per iPhone e Schermi Piccoli (Menu) */
+@media(max-width:500px){
+  nav{
+    padding:14px 4%;
+  }
+  /* Impedisce il ritorno a capo del blocco dei link e attiva lo scroll laterale fluido */
+  nav div:last-child {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 10px;
+    padding-bottom: 4px;
+    margin-bottom: -4px;
+    /* Nasconde la scrollbar visiva su Chrome/Safari/iOS */
+    scrollbar-width: none; 
+  }
+  nav div:last-child::-webkit-scrollbar {
+    display: none; 
+  }
+  /* Ottimizza lo spazio tra i link per i display piccoli */
+  nav a {
+    margin-left: 14px;
+    flex: 0 0 auto;
+  }
+}
+</style></head>
 <body><nav><div><strong>PAOLO PETRILLO</strong></div><div><a href="#contesto">CONTESTO</a><a href="#governance">GOVERNANCE</a><a href="#processo">PROCESSO</a><a href="#media">MEDIA</a><a href="#contatto">CONTATTI</a><a href="index.html">EN</a></div></nav>
 <div class="container"><h1>SOUND ARCHITECT</h1><p>Il suono è sempre parte del progetto. La differenza è il momento in cui viene considerato.</p><p>Lavoro con brand, studi di architettura, hospitality, retail ed agenzie di comunicazione, aiutando le organizzazioni a integrare il suono nei processi decisionali prima che inizi l'esecuzione.</p>
 <section id="contesto" class="block"><div><div class="kicker">CONTESTO</div><h2>Il suono è già presente in ogni progetto</h2><p>Anche quando non pianificato strategicamente, nasce dalle decisioni creative e spaziali.</p><p>Genera una struttura implicita che influenza la percezione.</p></div><img src="photo1.jpg" alt=""></section>
