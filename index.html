@@ -54,6 +54,33 @@ footer{text-align:center;padding:60px;font-size:.75rem;color:rgba(26,16,51,.5);}
 footer a{text-decoration:none;color:var(--violet);}
 footer a:hover{color:var(--gold)}
 @media(max-width:900px){.block,.block.reverse{grid-template-columns:1fr;}}
+
+/* Ottimizzazione specifica per iPhone e Schermi Piccoli (Menu) */
+@media(max-width:500px){
+  nav{
+    padding:14px 4%;
+  }
+  /* Impedisce il ritorno a capo del blocco dei link e attiva lo scroll laterale fluido */
+  nav div:last-child {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 10px;
+    padding-bottom: 4px;
+    margin-bottom: -4px;
+    /* Nasconde la scrollbar visiva su Chrome/Safari/iOS */
+    scrollbar-width: none; 
+  }
+  nav div:last-child::-webkit-scrollbar {
+    display: none; 
+  }
+  /* Ottimizza lo spazio tra i link per i display piccoli */
+  nav a {
+    margin-left: 14px;
+    flex: 0 0 auto;
+  }
+}
 </style>
 </head>
 <body>
